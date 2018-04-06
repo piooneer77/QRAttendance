@@ -17,6 +17,14 @@
 		18695AAA2063CCAA00F01823 /* QRReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18695AA92063CCAA00F01823 /* QRReaderViewController.swift */; };
 		18695AAC2063CCC000F01823 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18695AAB2063CCC000F01823 /* SettingsViewController.swift */; };
 		18695AAE2063CCD200F01823 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18695AAD2063CCD200F01823 /* HomeViewController.swift */; };
+		1883F17320667EC200749A46 /* ContactDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1883F17220667EC200749A46 /* ContactDetails.swift */; };
+		1883F17520667F2C00749A46 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1883F17420667F2C00749A46 /* Room.swift */; };
+		1883F1772066807500749A46 /* Material.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1883F1762066807500749A46 /* Material.swift */; };
+		1883F179206680AC00749A46 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1883F178206680AC00749A46 /* Student.swift */; };
+		1883F17B2066811200749A46 /* Doctor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1883F17A2066811200749A46 /* Doctor.swift */; };
+		1883F17D2066813A00749A46 /* Lecture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1883F17C2066813A00749A46 /* Lecture.swift */; };
+		18D8598B206F9DF500B4C4C8 /* GenericRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D8598A206F9DF500B4C4C8 /* GenericRepository.swift */; };
+		18D8598D206F9F6200B4C4C8 /* GenericService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D8598C206F9F6200B4C4C8 /* GenericService.swift */; };
 		767854101C44E91A03706E10 /* Pods_QRAttendance.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91AA61BF33F4A7162964E8E6 /* Pods_QRAttendance.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +41,14 @@
 		18695AA92063CCAA00F01823 /* QRReaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRReaderViewController.swift; sourceTree = "<group>"; };
 		18695AAB2063CCC000F01823 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		18695AAD2063CCD200F01823 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		1883F17220667EC200749A46 /* ContactDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetails.swift; sourceTree = "<group>"; };
+		1883F17420667F2C00749A46 /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
+		1883F1762066807500749A46 /* Material.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Material.swift; sourceTree = "<group>"; };
+		1883F178206680AC00749A46 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		1883F17A2066811200749A46 /* Doctor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Doctor.swift; sourceTree = "<group>"; };
+		1883F17C2066813A00749A46 /* Lecture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lecture.swift; sourceTree = "<group>"; };
+		18D8598A206F9DF500B4C4C8 /* GenericRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericRepository.swift; sourceTree = "<group>"; };
+		18D8598C206F9F6200B4C4C8 /* GenericService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericService.swift; sourceTree = "<group>"; };
 		74BF2D86C064D432BE485CDB /* Pods-QRAttendance.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QRAttendance.release.xcconfig"; path = "Pods/Target Support Files/Pods-QRAttendance/Pods-QRAttendance.release.xcconfig"; sourceTree = "<group>"; };
 		91AA61BF33F4A7162964E8E6 /* Pods_QRAttendance.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QRAttendance.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9D59E91CF54E9023DDFD3B7 /* Pods-QRAttendance.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QRAttendance.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QRAttendance/Pods-QRAttendance.debug.xcconfig"; sourceTree = "<group>"; };
@@ -80,11 +96,11 @@
 		1836CBF82063A455007EAC4D /* QRAttendance */ = {
 			isa = PBXGroup;
 			children = (
+				18D85989206F9DD800B4C4C8 /* Repository */,
 				1836CC152063B3B5007EAC4D /* Business */,
 				1836CC142063B3A9007EAC4D /* Services */,
 				1836CC132063B3A2007EAC4D /* Models */,
-				1836CC102063B346007EAC4D /* Extensions */,
-				1836CC0F2063B339007EAC4D /* Controllers */,
+				1836CC0F2063B339007EAC4D /* ViewControllers */,
 				1836CC0E2063B332007EAC4D /* Views */,
 				1836CC0B2063AB7C007EAC4D /* Helpers */,
 				1836CBF92063A455007EAC4D /* AppDelegate.swift */,
@@ -111,16 +127,16 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		1836CC0F2063B339007EAC4D /* Controllers */ = {
+		1836CC0F2063B339007EAC4D /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				18695AA52063C60300F01823 /* LoginViewController.swift */,
-				18695AA72063CC9400F01823 /* QRGeneratorViewController.swift */,
-				18695AA92063CCAA00F01823 /* QRReaderViewController.swift */,
-				18695AAB2063CCC000F01823 /* SettingsViewController.swift */,
-				18695AAD2063CCD200F01823 /* HomeViewController.swift */,
+				184003E5207768F300ECDC3F /* HomeViewCotroller */,
+				184003E4207768E900ECDC3F /* SettingsViewCotroller */,
+				184003E3207768DE00ECDC3F /* QRReaderViewCotroller */,
+				184003E2207768CD00ECDC3F /* QRGeneratorViewCotroller */,
+				184003E1207768B300ECDC3F /* LoginViewCotroller */,
 			);
-			path = Controllers;
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		1836CC102063B346007EAC4D /* Extensions */ = {
@@ -149,6 +165,12 @@
 		1836CC132063B3A2007EAC4D /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				1883F17220667EC200749A46 /* ContactDetails.swift */,
+				1883F17420667F2C00749A46 /* Room.swift */,
+				1883F1762066807500749A46 /* Material.swift */,
+				1883F178206680AC00749A46 /* Student.swift */,
+				1883F17A2066811200749A46 /* Doctor.swift */,
+				1883F17C2066813A00749A46 /* Lecture.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -156,6 +178,7 @@
 		1836CC142063B3A9007EAC4D /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				18D8598C206F9F6200B4C4C8 /* GenericService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -165,6 +188,151 @@
 			children = (
 			);
 			path = Business;
+			sourceTree = "<group>";
+		};
+		184003E1207768B300ECDC3F /* LoginViewCotroller */ = {
+			isa = PBXGroup;
+			children = (
+				184003EF20776DA700ECDC3F /* Extensions */,
+				18695AA52063C60300F01823 /* LoginViewController.swift */,
+			);
+			path = LoginViewCotroller;
+			sourceTree = "<group>";
+		};
+		184003E2207768CD00ECDC3F /* QRGeneratorViewCotroller */ = {
+			isa = PBXGroup;
+			children = (
+				184003EC20776D8C00ECDC3F /* Extensions */,
+				18695AA72063CC9400F01823 /* QRGeneratorViewController.swift */,
+			);
+			path = QRGeneratorViewCotroller;
+			sourceTree = "<group>";
+		};
+		184003E3207768DE00ECDC3F /* QRReaderViewCotroller */ = {
+			isa = PBXGroup;
+			children = (
+				184003E920776D7800ECDC3F /* Extensions */,
+				18695AA92063CCAA00F01823 /* QRReaderViewController.swift */,
+			);
+			path = QRReaderViewCotroller;
+			sourceTree = "<group>";
+		};
+		184003E4207768E900ECDC3F /* SettingsViewCotroller */ = {
+			isa = PBXGroup;
+			children = (
+				184003E620776D5D00ECDC3F /* Extensions */,
+				18695AAB2063CCC000F01823 /* SettingsViewController.swift */,
+			);
+			path = SettingsViewCotroller;
+			sourceTree = "<group>";
+		};
+		184003E5207768F300ECDC3F /* HomeViewCotroller */ = {
+			isa = PBXGroup;
+			children = (
+				1836CC102063B346007EAC4D /* Extensions */,
+				18695AAD2063CCD200F01823 /* HomeViewController.swift */,
+			);
+			path = HomeViewCotroller;
+			sourceTree = "<group>";
+		};
+		184003E620776D5D00ECDC3F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				184003E720776D5D00ECDC3F /* EventExtentions */,
+				184003E820776D5D00ECDC3F /* ViewExtentions */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		184003E720776D5D00ECDC3F /* EventExtentions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = EventExtentions;
+			sourceTree = "<group>";
+		};
+		184003E820776D5D00ECDC3F /* ViewExtentions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewExtentions;
+			sourceTree = "<group>";
+		};
+		184003E920776D7800ECDC3F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				184003EA20776D7800ECDC3F /* EventExtentions */,
+				184003EB20776D7800ECDC3F /* ViewExtentions */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		184003EA20776D7800ECDC3F /* EventExtentions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = EventExtentions;
+			sourceTree = "<group>";
+		};
+		184003EB20776D7800ECDC3F /* ViewExtentions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewExtentions;
+			sourceTree = "<group>";
+		};
+		184003EC20776D8C00ECDC3F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				184003ED20776D8C00ECDC3F /* EventExtentions */,
+				184003EE20776D8C00ECDC3F /* ViewExtentions */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		184003ED20776D8C00ECDC3F /* EventExtentions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = EventExtentions;
+			sourceTree = "<group>";
+		};
+		184003EE20776D8C00ECDC3F /* ViewExtentions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewExtentions;
+			sourceTree = "<group>";
+		};
+		184003EF20776DA700ECDC3F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				184003F020776DA700ECDC3F /* EventExtentions */,
+				184003F120776DA700ECDC3F /* ViewExtentions */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		184003F020776DA700ECDC3F /* EventExtentions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = EventExtentions;
+			sourceTree = "<group>";
+		};
+		184003F120776DA700ECDC3F /* ViewExtentions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewExtentions;
+			sourceTree = "<group>";
+		};
+		18D85989206F9DD800B4C4C8 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				18D8598A206F9DF500B4C4C8 /* GenericRepository.swift */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 		D03F5FC482C33DAE0E1A64E3 /* Frameworks */ = {
@@ -304,11 +472,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1883F1772066807500749A46 /* Material.swift in Sources */,
 				18695AA62063C60300F01823 /* LoginViewController.swift in Sources */,
+				1883F17B2066811200749A46 /* Doctor.swift in Sources */,
+				18D8598B206F9DF500B4C4C8 /* GenericRepository.swift in Sources */,
+				1883F17320667EC200749A46 /* ContactDetails.swift in Sources */,
+				1883F179206680AC00749A46 /* Student.swift in Sources */,
 				18695AAC2063CCC000F01823 /* SettingsViewController.swift in Sources */,
 				18695AAE2063CCD200F01823 /* HomeViewController.swift in Sources */,
+				18D8598D206F9F6200B4C4C8 /* GenericService.swift in Sources */,
 				18695AAA2063CCAA00F01823 /* QRReaderViewController.swift in Sources */,
+				1883F17520667F2C00749A46 /* Room.swift in Sources */,
 				1836CC0D2063AB9B007EAC4D /* QRCodeGenerator.swift in Sources */,
+				1883F17D2066813A00749A46 /* Lecture.swift in Sources */,
 				18695AA82063CC9400F01823 /* QRGeneratorViewController.swift in Sources */,
 				1836CBFA2063A455007EAC4D /* AppDelegate.swift in Sources */,
 			);
