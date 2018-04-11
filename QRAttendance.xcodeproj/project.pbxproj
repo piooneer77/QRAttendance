@@ -8,15 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		1836CBFA2063A455007EAC4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1836CBF92063A455007EAC4D /* AppDelegate.swift */; };
-		1836CBFF2063A455007EAC4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1836CBFD2063A455007EAC4D /* Main.storyboard */; };
 		1836CC012063A455007EAC4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1836CC002063A455007EAC4D /* Assets.xcassets */; };
 		1836CC042063A455007EAC4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1836CC022063A455007EAC4D /* LaunchScreen.storyboard */; };
 		1836CC0D2063AB9B007EAC4D /* QRCodeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1836CC0C2063AB9B007EAC4D /* QRCodeGenerator.swift */; };
+		184003F420776E6E00ECDC3F /* QRReaderViewExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184003F320776E6E00ECDC3F /* QRReaderViewExtention.swift */; };
+		184003F620776EA600ECDC3F /* QRReaderEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184003F520776EA600ECDC3F /* QRReaderEvents.swift */; };
+		184003F82077860600ECDC3F /* ColorExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184003F72077860600ECDC3F /* ColorExtention.swift */; };
+		184003FB2077867000ECDC3F /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184003FA2077867000ECDC3F /* AppConstants.swift */; };
+		184003FD2077CEB300ECDC3F /* LoginEventExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184003FC2077CEB300ECDC3F /* LoginEventExtention.swift */; };
+		184003FF2077CECB00ECDC3F /* LoginViewExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184003FE2077CECB00ECDC3F /* LoginViewExtention.swift */; };
+		18400401207CA9CC00ECDC3F /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18400400207CA9CC00ECDC3F /* MainTabBarController.swift */; };
+		18400403207CB25700ECDC3F /* HelperMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18400402207CB25700ECDC3F /* HelperMethods.swift */; };
+		18400405207DE9DA00ECDC3F /* SettingsEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18400404207DE9DA00ECDC3F /* SettingsEvents.swift */; };
+		18400407207DE9EA00ECDC3F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18400406207DE9EA00ECDC3F /* SettingsView.swift */; };
+		18400409207E3C9500ECDC3F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18400408207E3C9500ECDC3F /* GoogleService-Info.plist */; };
+		1840040F207E481200ECDC3F /* MainTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1840040E207E481200ECDC3F /* MainTabBarView.swift */; };
+		18400411207E482600ECDC3F /* MainTabBarEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18400410207E482600ECDC3F /* MainTabBarEvents.swift */; };
 		18695AA62063C60300F01823 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18695AA52063C60300F01823 /* LoginViewController.swift */; };
 		18695AA82063CC9400F01823 /* QRGeneratorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18695AA72063CC9400F01823 /* QRGeneratorViewController.swift */; };
 		18695AAA2063CCAA00F01823 /* QRReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18695AA92063CCAA00F01823 /* QRReaderViewController.swift */; };
 		18695AAC2063CCC000F01823 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18695AAB2063CCC000F01823 /* SettingsViewController.swift */; };
-		18695AAE2063CCD200F01823 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18695AAD2063CCD200F01823 /* HomeViewController.swift */; };
 		1883F17320667EC200749A46 /* ContactDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1883F17220667EC200749A46 /* ContactDetails.swift */; };
 		1883F17520667F2C00749A46 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1883F17420667F2C00749A46 /* Room.swift */; };
 		1883F1772066807500749A46 /* Material.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1883F1762066807500749A46 /* Material.swift */; };
@@ -31,16 +42,27 @@
 /* Begin PBXFileReference section */
 		1836CBF62063A455007EAC4D /* QRAttendance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRAttendance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1836CBF92063A455007EAC4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1836CBFE2063A455007EAC4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1836CC002063A455007EAC4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1836CC032063A455007EAC4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1836CC052063A455007EAC4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1836CC0C2063AB9B007EAC4D /* QRCodeGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeGenerator.swift; sourceTree = "<group>"; };
+		184003F320776E6E00ECDC3F /* QRReaderViewExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRReaderViewExtention.swift; sourceTree = "<group>"; };
+		184003F520776EA600ECDC3F /* QRReaderEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRReaderEvents.swift; sourceTree = "<group>"; };
+		184003F72077860600ECDC3F /* ColorExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtention.swift; sourceTree = "<group>"; };
+		184003FA2077867000ECDC3F /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		184003FC2077CEB300ECDC3F /* LoginEventExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEventExtention.swift; sourceTree = "<group>"; };
+		184003FE2077CECB00ECDC3F /* LoginViewExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewExtention.swift; sourceTree = "<group>"; };
+		18400400207CA9CC00ECDC3F /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		18400402207CB25700ECDC3F /* HelperMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperMethods.swift; sourceTree = "<group>"; };
+		18400404207DE9DA00ECDC3F /* SettingsEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsEvents.swift; sourceTree = "<group>"; };
+		18400406207DE9EA00ECDC3F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		18400408207E3C9500ECDC3F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1840040E207E481200ECDC3F /* MainTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarView.swift; sourceTree = "<group>"; };
+		18400410207E482600ECDC3F /* MainTabBarEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarEvents.swift; sourceTree = "<group>"; };
 		18695AA52063C60300F01823 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		18695AA72063CC9400F01823 /* QRGeneratorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRGeneratorViewController.swift; sourceTree = "<group>"; };
 		18695AA92063CCAA00F01823 /* QRReaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRReaderViewController.swift; sourceTree = "<group>"; };
 		18695AAB2063CCC000F01823 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		18695AAD2063CCD200F01823 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		1883F17220667EC200749A46 /* ContactDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetails.swift; sourceTree = "<group>"; };
 		1883F17420667F2C00749A46 /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
 		1883F1762066807500749A46 /* Material.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Material.swift; sourceTree = "<group>"; };
@@ -96,6 +118,10 @@
 		1836CBF82063A455007EAC4D /* QRAttendance */ = {
 			isa = PBXGroup;
 			children = (
+				18400408207E3C9500ECDC3F /* GoogleService-Info.plist */,
+				184003F92077865400ECDC3F /* Constants */,
+				1836CC052063A455007EAC4D /* Info.plist */,
+				184003F220776DFA00ECDC3F /* SupportingFiles */,
 				18D85989206F9DD800B4C4C8 /* Repository */,
 				1836CC152063B3B5007EAC4D /* Business */,
 				1836CC142063B3A9007EAC4D /* Services */,
@@ -103,11 +129,6 @@
 				1836CC0F2063B339007EAC4D /* ViewControllers */,
 				1836CC0E2063B332007EAC4D /* Views */,
 				1836CC0B2063AB7C007EAC4D /* Helpers */,
-				1836CBF92063A455007EAC4D /* AppDelegate.swift */,
-				1836CBFD2063A455007EAC4D /* Main.storyboard */,
-				1836CC002063A455007EAC4D /* Assets.xcassets */,
-				1836CC022063A455007EAC4D /* LaunchScreen.storyboard */,
-				1836CC052063A455007EAC4D /* Info.plist */,
 			);
 			path = QRAttendance;
 			sourceTree = "<group>";
@@ -116,6 +137,8 @@
 			isa = PBXGroup;
 			children = (
 				1836CC0C2063AB9B007EAC4D /* QRCodeGenerator.swift */,
+				184003F72077860600ECDC3F /* ColorExtention.swift */,
+				18400402207CB25700ECDC3F /* HelperMethods.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -130,36 +153,13 @@
 		1836CC0F2063B339007EAC4D /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				184003E5207768F300ECDC3F /* HomeViewCotroller */,
+				1840040A207E44F800ECDC3F /* MainTabBarController */,
 				184003E4207768E900ECDC3F /* SettingsViewCotroller */,
 				184003E3207768DE00ECDC3F /* QRReaderViewCotroller */,
 				184003E2207768CD00ECDC3F /* QRGeneratorViewCotroller */,
 				184003E1207768B300ECDC3F /* LoginViewCotroller */,
 			);
 			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		1836CC102063B346007EAC4D /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				1836CC122063B386007EAC4D /* EventExtentions */,
-				1836CC112063B375007EAC4D /* ViewExtentions */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		1836CC112063B375007EAC4D /* ViewExtentions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewExtentions;
-			sourceTree = "<group>";
-		};
-		1836CC122063B386007EAC4D /* EventExtentions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = EventExtentions;
 			sourceTree = "<group>";
 		};
 		1836CC132063B3A2007EAC4D /* Models */ = {
@@ -226,15 +226,6 @@
 			path = SettingsViewCotroller;
 			sourceTree = "<group>";
 		};
-		184003E5207768F300ECDC3F /* HomeViewCotroller */ = {
-			isa = PBXGroup;
-			children = (
-				1836CC102063B346007EAC4D /* Extensions */,
-				18695AAD2063CCD200F01823 /* HomeViewController.swift */,
-			);
-			path = HomeViewCotroller;
-			sourceTree = "<group>";
-		};
 		184003E620776D5D00ECDC3F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -247,6 +238,7 @@
 		184003E720776D5D00ECDC3F /* EventExtentions */ = {
 			isa = PBXGroup;
 			children = (
+				18400404207DE9DA00ECDC3F /* SettingsEvents.swift */,
 			);
 			path = EventExtentions;
 			sourceTree = "<group>";
@@ -254,6 +246,7 @@
 		184003E820776D5D00ECDC3F /* ViewExtentions */ = {
 			isa = PBXGroup;
 			children = (
+				18400406207DE9EA00ECDC3F /* SettingsView.swift */,
 			);
 			path = ViewExtentions;
 			sourceTree = "<group>";
@@ -270,6 +263,7 @@
 		184003EA20776D7800ECDC3F /* EventExtentions */ = {
 			isa = PBXGroup;
 			children = (
+				184003F520776EA600ECDC3F /* QRReaderEvents.swift */,
 			);
 			path = EventExtentions;
 			sourceTree = "<group>";
@@ -277,6 +271,7 @@
 		184003EB20776D7800ECDC3F /* ViewExtentions */ = {
 			isa = PBXGroup;
 			children = (
+				184003F320776E6E00ECDC3F /* QRReaderViewExtention.swift */,
 			);
 			path = ViewExtentions;
 			sourceTree = "<group>";
@@ -316,6 +311,7 @@
 		184003F020776DA700ECDC3F /* EventExtentions */ = {
 			isa = PBXGroup;
 			children = (
+				184003FC2077CEB300ECDC3F /* LoginEventExtention.swift */,
 			);
 			path = EventExtentions;
 			sourceTree = "<group>";
@@ -323,6 +319,59 @@
 		184003F120776DA700ECDC3F /* ViewExtentions */ = {
 			isa = PBXGroup;
 			children = (
+				184003FE2077CECB00ECDC3F /* LoginViewExtention.swift */,
+			);
+			path = ViewExtentions;
+			sourceTree = "<group>";
+		};
+		184003F220776DFA00ECDC3F /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				1836CBF92063A455007EAC4D /* AppDelegate.swift */,
+				1836CC002063A455007EAC4D /* Assets.xcassets */,
+				1836CC022063A455007EAC4D /* LaunchScreen.storyboard */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		184003F92077865400ECDC3F /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				184003FA2077867000ECDC3F /* AppConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		1840040A207E44F800ECDC3F /* MainTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				18400400207CA9CC00ECDC3F /* MainTabBarController.swift */,
+				1840040B207E451000ECDC3F /* Extensions */,
+			);
+			path = MainTabBarController;
+			sourceTree = "<group>";
+		};
+		1840040B207E451000ECDC3F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1840040D207E454700ECDC3F /* ViewExtentions */,
+				1840040C207E453C00ECDC3F /* EventExtentions */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1840040C207E453C00ECDC3F /* EventExtentions */ = {
+			isa = PBXGroup;
+			children = (
+				18400410207E482600ECDC3F /* MainTabBarEvents.swift */,
+			);
+			path = EventExtentions;
+			sourceTree = "<group>";
+		};
+		1840040D207E454700ECDC3F /* ViewExtentions */ = {
+			isa = PBXGroup;
+			children = (
+				1840040E207E481200ECDC3F /* MainTabBarView.swift */,
 			);
 			path = ViewExtentions;
 			sourceTree = "<group>";
@@ -406,8 +455,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1836CC042063A455007EAC4D /* LaunchScreen.storyboard in Resources */,
+				18400409207E3C9500ECDC3F /* GoogleService-Info.plist in Resources */,
 				1836CC012063A455007EAC4D /* Assets.xcassets in Resources */,
-				1836CBFF2063A455007EAC4D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,11 +470,19 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-QRAttendance/Pods-QRAttendance-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/QRCodeReader.swift/QRCodeReader.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QRCodeReader.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -472,35 +529,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				184003FB2077867000ECDC3F /* AppConstants.swift in Sources */,
+				184003F82077860600ECDC3F /* ColorExtention.swift in Sources */,
 				1883F1772066807500749A46 /* Material.swift in Sources */,
 				18695AA62063C60300F01823 /* LoginViewController.swift in Sources */,
 				1883F17B2066811200749A46 /* Doctor.swift in Sources */,
 				18D8598B206F9DF500B4C4C8 /* GenericRepository.swift in Sources */,
 				1883F17320667EC200749A46 /* ContactDetails.swift in Sources */,
+				184003F420776E6E00ECDC3F /* QRReaderViewExtention.swift in Sources */,
 				1883F179206680AC00749A46 /* Student.swift in Sources */,
+				184003FD2077CEB300ECDC3F /* LoginEventExtention.swift in Sources */,
+				18400403207CB25700ECDC3F /* HelperMethods.swift in Sources */,
+				184003FF2077CECB00ECDC3F /* LoginViewExtention.swift in Sources */,
 				18695AAC2063CCC000F01823 /* SettingsViewController.swift in Sources */,
-				18695AAE2063CCD200F01823 /* HomeViewController.swift in Sources */,
+				18400405207DE9DA00ECDC3F /* SettingsEvents.swift in Sources */,
+				18400407207DE9EA00ECDC3F /* SettingsView.swift in Sources */,
+				1840040F207E481200ECDC3F /* MainTabBarView.swift in Sources */,
 				18D8598D206F9F6200B4C4C8 /* GenericService.swift in Sources */,
 				18695AAA2063CCAA00F01823 /* QRReaderViewController.swift in Sources */,
 				1883F17520667F2C00749A46 /* Room.swift in Sources */,
 				1836CC0D2063AB9B007EAC4D /* QRCodeGenerator.swift in Sources */,
 				1883F17D2066813A00749A46 /* Lecture.swift in Sources */,
 				18695AA82063CC9400F01823 /* QRGeneratorViewController.swift in Sources */,
+				184003F620776EA600ECDC3F /* QRReaderEvents.swift in Sources */,
+				18400411207E482600ECDC3F /* MainTabBarEvents.swift in Sources */,
 				1836CBFA2063A455007EAC4D /* AppDelegate.swift in Sources */,
+				18400401207CA9CC00ECDC3F /* MainTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1836CBFD2063A455007EAC4D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1836CBFE2063A455007EAC4D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1836CC022063A455007EAC4D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,6 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        FirebaseApp.configure()
         buildNavigationControllerFromScreenBounds()
         return true
     }
@@ -43,11 +45,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     private func buildNavigationControllerFromScreenBounds() {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
-        let readerVC = QRReaderViewController()
-//        let layout = UICollectionViewFlowLayout()
-        //        layout.scrollDirection = .horizontal
-//        let homeController : HomeController = HomeController(collectionViewLayout: layout)
-        window?.rootViewController = UINavigationController(rootViewController: readerVC)
+        window?.rootViewController = MainTabBarController()
     }
     
 }
