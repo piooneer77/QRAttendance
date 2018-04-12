@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 extension LoginViewController : UIImagePickerControllerDelegate, UINavigationControllerDelegate{
     
@@ -15,15 +16,21 @@ extension LoginViewController : UIImagePickerControllerDelegate, UINavigationCon
     }
     
     func login(){
-        self.dismiss(animated: true, completion: nil)
+//        self.dismiss(animated: true, completion: nil)
+        let student : Student = Student()
         guard let email = emailTextField.text,
             let magic = magicTextField.text else { return }
-        print("Valid Control Details")
-        authenticationReference.signIn(withEmail: email, password: magic) { (user, error) in
+        student.magic = magic
+        student.contactDetails?.email = email
+        AppConstants.authenticationReference.signIn(withEmail: email, password: magic) { (user, error) in
             if error != nil {
+                let alert = UIAlertController(title: AppConstants.errorTitle, message: error?.localizedDescription , preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: AppConstants.tryActionTitle, style: .default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
                 print(error)
                 return
             }
+            self.saveStudentDetailsToDatabase(student: student)
             self.dismiss(animated: true, completion: nil)
             print("Logged In")
         }
@@ -44,19 +51,24 @@ extension LoginViewController : UIImagePickerControllerDelegate, UINavigationCon
 //        }
     }
     
-    private func putUserDetails(name: String, email: String, magic: String,imageURL: String, child: String){
+    private func saveStudentDetailsToDatabase(student: Student){
         
-//        let childReferrence = databaseReferrence.child(FirebaseConstants.userTableName).child(child)
-//        let values : [String : Any] = [AppConstants.Keys.name: name, AppConstants.Keys.email: email, AppConstants.Keys.magic: magic, AppConstants.Keys.imageURL: imageURL]
-//        childReferrence.updateChildValues(values) { (error, referrence) in
-//            if error != nil {
-//                print(error)
-//                return
-//            }
-//            self.messagesController?.setNavigationBarTitle()
-//            self.dismiss(animated: true, completion: nil)
-//            print("Successfully Saved To Database including profile image")
-//        }
+        if let userId = AppConstants.authenticationReference.currentUser?.uid {
+            let values : [String : Any] = [AppConstants.name: student.name,
+                                           AppConstants.user: student.user,
+                                           AppConstants.magic: student.magic,
+                                           AppConstants.contactDetails: [AppConstants.address: student.contactDetails?.address,
+                                                                         AppConstants.email: student.contactDetails?.email,
+                                                                         AppConstants.phone: student.contactDetails?.phone]]
+            AppConstants.databaseReferrence.child(AppConstants.studentTable).child(userId).updateChildValues(values){
+                (error, referrence) in
+                    if error != nil {
+                        print(error)
+                        return
+                    }
+                print("success")
+            }
+        }
     }
     
     @objc func setProfileImage(){

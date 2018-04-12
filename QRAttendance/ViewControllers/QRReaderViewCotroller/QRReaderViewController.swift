@@ -17,7 +17,7 @@ class QRReaderViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setViewConstraits()
-        navigationController?.isNavigationBarHidden = true
+        setNavigationBarItems()
         view.backgroundColor = .white
     }
     

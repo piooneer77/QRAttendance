@@ -11,6 +11,14 @@ import AVFoundation
 
 extension QRReaderViewController : AVCaptureMetadataOutputObjectsDelegate {
     
+    func setNavigationBarItems(){
+        navigationItem.title = AppConstants.readerTabTitle
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: AppConstants.logoutSegmentTitle, style: .plain, target: self, action: #selector(handleLogout))
+    }
+    
+    @objc private func handleLogout(){
+        HelperMethods.handleLogout(controller: self)
+    }
     
     func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
         if metadataObjects.count != 0 {

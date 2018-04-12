@@ -11,7 +11,7 @@ import Firebase
 extension MainTabBarController {
     
     func isUserLoggedIn(){
-        if Firebase.Auth.auth().currentUser?.uid == nil {
+        if AppConstants.authenticationReference.currentUser?.uid == nil {
             perform(#selector(handleLogout), with: nil, afterDelay: 0)
         } else {
             
@@ -20,13 +20,12 @@ extension MainTabBarController {
     
     @objc private func handleLogout(){
         logout()
-        let loginController = LoginViewController()
-        present(loginController, animated: true, completion: nil)
+        present(AppConstants.loginController, animated: true, completion: nil)
     }
     
     private func logout(){
         do {
-            try Firebase.Auth.auth().signOut()
+            try AppConstants.authenticationReference.signOut()
         } catch let logoutError {
             print(logoutError)
         }

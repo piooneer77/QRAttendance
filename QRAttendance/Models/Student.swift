@@ -14,6 +14,10 @@ class Student {
     var magic : String?
     var contactDetails : ContactDetails?
     
+    init() {
+        
+    }
+    
     init(json : [String:AnyObject]) {
         self.Id = json["Id"] as? String
         self.name = json["name"] as? String

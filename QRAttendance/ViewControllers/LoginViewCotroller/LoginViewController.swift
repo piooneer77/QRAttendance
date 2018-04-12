@@ -7,12 +7,9 @@
 //
 
 import UIKit
-import Firebase
 
 class LoginViewController : UIViewController {
     
-    let databaseReferrence = Firebase.Database.database().reference(fromURL: AppConstants.databaseURL)
-    let authenticationReference = Firebase.Auth.auth()
 //    weak var mainTabBarController = MainTabBarController()
     
     override func viewDidLoad() {

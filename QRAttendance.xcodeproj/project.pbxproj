@@ -21,9 +21,9 @@
 		18400403207CB25700ECDC3F /* HelperMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18400402207CB25700ECDC3F /* HelperMethods.swift */; };
 		18400405207DE9DA00ECDC3F /* SettingsEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18400404207DE9DA00ECDC3F /* SettingsEvents.swift */; };
 		18400407207DE9EA00ECDC3F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18400406207DE9EA00ECDC3F /* SettingsView.swift */; };
-		18400409207E3C9500ECDC3F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18400408207E3C9500ECDC3F /* GoogleService-Info.plist */; };
 		1840040F207E481200ECDC3F /* MainTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1840040E207E481200ECDC3F /* MainTabBarView.swift */; };
 		18400411207E482600ECDC3F /* MainTabBarEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18400410207E482600ECDC3F /* MainTabBarEvents.swift */; };
+		18400415207F55F700ECDC3F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18400414207F55F700ECDC3F /* GoogleService-Info.plist */; };
 		18695AA62063C60300F01823 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18695AA52063C60300F01823 /* LoginViewController.swift */; };
 		18695AA82063CC9400F01823 /* QRGeneratorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18695AA72063CC9400F01823 /* QRGeneratorViewController.swift */; };
 		18695AAA2063CCAA00F01823 /* QRReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18695AA92063CCAA00F01823 /* QRReaderViewController.swift */; };
@@ -56,9 +56,9 @@
 		18400402207CB25700ECDC3F /* HelperMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperMethods.swift; sourceTree = "<group>"; };
 		18400404207DE9DA00ECDC3F /* SettingsEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsEvents.swift; sourceTree = "<group>"; };
 		18400406207DE9EA00ECDC3F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		18400408207E3C9500ECDC3F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1840040E207E481200ECDC3F /* MainTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarView.swift; sourceTree = "<group>"; };
 		18400410207E482600ECDC3F /* MainTabBarEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarEvents.swift; sourceTree = "<group>"; };
+		18400414207F55F700ECDC3F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		18695AA52063C60300F01823 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		18695AA72063CC9400F01823 /* QRGeneratorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRGeneratorViewController.swift; sourceTree = "<group>"; };
 		18695AA92063CCAA00F01823 /* QRReaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRReaderViewController.swift; sourceTree = "<group>"; };
@@ -118,7 +118,7 @@
 		1836CBF82063A455007EAC4D /* QRAttendance */ = {
 			isa = PBXGroup;
 			children = (
-				18400408207E3C9500ECDC3F /* GoogleService-Info.plist */,
+				18400414207F55F700ECDC3F /* GoogleService-Info.plist */,
 				184003F92077865400ECDC3F /* Constants */,
 				1836CC052063A455007EAC4D /* Info.plist */,
 				184003F220776DFA00ECDC3F /* SupportingFiles */,
@@ -138,7 +138,6 @@
 			children = (
 				1836CC0C2063AB9B007EAC4D /* QRCodeGenerator.swift */,
 				184003F72077860600ECDC3F /* ColorExtention.swift */,
-				18400402207CB25700ECDC3F /* HelperMethods.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -337,6 +336,7 @@
 		184003F92077865400ECDC3F /* Constants */ = {
 			isa = PBXGroup;
 			children = (
+				18400402207CB25700ECDC3F /* HelperMethods.swift */,
 				184003FA2077867000ECDC3F /* AppConstants.swift */,
 			);
 			path = Constants;
@@ -455,8 +455,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1836CC042063A455007EAC4D /* LaunchScreen.storyboard in Resources */,
-				18400409207E3C9500ECDC3F /* GoogleService-Info.plist in Resources */,
 				1836CC012063A455007EAC4D /* Assets.xcassets in Resources */,
+				18400415207F55F700ECDC3F /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -45,7 +45,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     private func buildNavigationControllerFromScreenBounds() {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
-        window?.rootViewController = MainTabBarController()
+        window?.rootViewController = AppConstants.mainTabBarController
     }
     
 }

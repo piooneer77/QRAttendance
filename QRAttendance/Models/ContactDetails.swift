@@ -13,6 +13,10 @@ class ContactDetails {
     var email : String?
     var address : String?
     
+    init() {
+        
+    }
+    
     init(json : [String:AnyObject]) {
         self.Id = json["Id"] as? String
         self.phone = json["phone"] as? String
