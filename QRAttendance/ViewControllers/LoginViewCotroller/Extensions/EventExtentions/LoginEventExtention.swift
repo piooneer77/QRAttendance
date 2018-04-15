@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import CryptoSwift
 
 extension LoginViewController : UIImagePickerControllerDelegate, UINavigationControllerDelegate{
     
@@ -22,12 +23,13 @@ extension LoginViewController : UIImagePickerControllerDelegate, UINavigationCon
             let magic = magicTextField.text else { return }
         student.magic = magic
         student.contactDetails?.email = email
+        AppConstants.hashedEmail = email.md5()
         AppConstants.authenticationReference.signIn(withEmail: email, password: magic) { (user, error) in
             if error != nil {
                 let alert = UIAlertController(title: AppConstants.errorTitle, message: error?.localizedDescription , preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: AppConstants.tryActionTitle, style: .default, handler: nil))
                 self.present(alert, animated: true, completion: nil)
-                print(error)
+//                print(error)
                 return
             }
             self.saveStudentDetailsToDatabase(student: student)
@@ -53,17 +55,17 @@ extension LoginViewController : UIImagePickerControllerDelegate, UINavigationCon
     
     private func saveStudentDetailsToDatabase(student: Student){
         
-        if let userId = AppConstants.authenticationReference.currentUser?.uid {
+        if let userId = AppConstants.hashedEmail {
+            let contactDetails : [String : Any] = [AppConstants.address: student.contactDetails?.address,
+                                                   AppConstants.email: student.contactDetails?.email,
+                                                   AppConstants.phone: student.contactDetails?.phone]
             let values : [String : Any] = [AppConstants.name: student.name,
                                            AppConstants.user: student.user,
-                                           AppConstants.magic: student.magic,
-                                           AppConstants.contactDetails: [AppConstants.address: student.contactDetails?.address,
-                                                                         AppConstants.email: student.contactDetails?.email,
-                                                                         AppConstants.phone: student.contactDetails?.phone]]
+                                           AppConstants.magic: student.magic]
             AppConstants.databaseReferrence.child(AppConstants.studentTable).child(userId).updateChildValues(values){
                 (error, referrence) in
                     if error != nil {
-                        print(error)
+//                        print(error)
                         return
                     }
                 print("success")

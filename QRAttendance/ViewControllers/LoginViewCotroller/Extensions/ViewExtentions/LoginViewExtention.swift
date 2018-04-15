@@ -55,7 +55,7 @@ extension LoginViewController {
     private func setLoginButonConstraints(button: UIButton){
         NSLayoutConstraint.activate([
             button.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            button.topAnchor.constraint(equalTo: magicTextField.bottomAnchor, constant: 75),
+            button.topAnchor.constraint(equalTo: magicTextField.bottomAnchor, constant: 20),
             button.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.75),
             button.heightAnchor.constraint(equalToConstant: 40)
             ])

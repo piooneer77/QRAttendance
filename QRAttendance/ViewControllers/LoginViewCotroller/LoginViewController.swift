@@ -17,9 +17,13 @@ class LoginViewController : UIViewController {
         navigationController?.isNavigationBarHidden = true
         view.backgroundColor = AppConstants.loginPageColor
         setViewConstraits()
+        fillLoginDetails()
     }
     
-    
+    private func fillLoginDetails(){
+        magicTextField.text = "aaaaaa"
+        emailTextField.text = "A@mail.com"
+    }
     
     lazy var profileImageView : UIImageView = {
         let view = UIImageView()

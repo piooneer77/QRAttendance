@@ -136,6 +136,7 @@
 		1836CC0B2063AB7C007EAC4D /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				18BE177D2080F30B0087DBCA /* Extension */,
 				1836CC0C2063AB9B007EAC4D /* QRCodeGenerator.swift */,
 				184003F72077860600ECDC3F /* ColorExtention.swift */,
 			);
@@ -376,6 +377,13 @@
 			path = ViewExtentions;
 			sourceTree = "<group>";
 		};
+		18BE177D2080F30B0087DBCA /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		18D85989206F9DD800B4C4C8 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
@@ -470,6 +478,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-QRAttendance/Pods-QRAttendance-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/QRCodeReader.swift/QRCodeReader.framework",
@@ -478,6 +487,7 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QRCodeReader.framework",

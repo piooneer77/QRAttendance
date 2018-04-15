@@ -23,7 +23,7 @@ class Student {
         self.name = json["name"] as? String
         self.user = json["user"] as? String
         self.magic = json["magic"] as? String
-        self.contactDetails = json["contactDetails"] as? ContactDetails
+        self.contactDetails = ContactDetails()
     }
     
     deinit {

@@ -23,7 +23,7 @@ class AppConstants {
     static let logoutSegmentTitle : String = "Logout"
     static let saveSegmentTitle : String = "Save"
     static let qrReaderTabTitle : String = "QR Reader"
-    static let settingsTabTitle : String = "Settings"
+    static let settingsTabTitle : String = "Account Settings"
     static let readerTabTitle : String = "QR Scanner"
     static let settingsImage : String = "Settings"
     static let readerImage : String = "scanner"
@@ -39,6 +39,7 @@ class AppConstants {
     // MARK: Firebase
     static let studentTable : String = "Student"
     static let profTable : String = "Professor"
+    static var hashedEmail : String?
     static let databaseURL : String = "https://qrattendance-9de0a.firebaseio.com/"
     static let databaseReferrence = Firebase.Database.database().reference(fromURL: AppConstants.databaseURL)
     static let authenticationReference = Firebase.Auth.auth()
